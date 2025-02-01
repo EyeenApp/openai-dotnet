@@ -166,7 +166,7 @@ public partial class ChatCompletionOptions
     ///     <see href="https://platform.openai.com/chat-completions">OpenAI Platform dashboard</see>.
     /// </summary>
     [CodeGenMember("Metadata")]
-    public IDictionary<string, string> Metadata { get; } = new ChangeTrackingDictionary<string, string>();
+    public IDictionary<string, string> Metadata { get; set; } = new ChangeTrackingDictionary<string, string>();
 
     // CUSTOM: Renamed.
     /// <summary>
@@ -176,4 +176,7 @@ public partial class ChatCompletionOptions
     /// </summary>
     [CodeGenMember("Store")]
     public bool? StoredOutputEnabled { get; set; }
+
+    [CodeGenMember("reasoning_effort")]
+    public string reasoning_effort { get; set; }
 }

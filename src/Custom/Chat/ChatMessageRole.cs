@@ -92,4 +92,10 @@ public enum ChatMessageRole
     /// </remarks>
     [CodeGenMember("Function")]
     Function,
+    /// <summary>
+    /// The <c>Developer</c> role, which provides instructions to the reasoning model that guide the behavior of future
+    /// <c>assistant</c> messages
+    /// </summary>
+    [CodeGenMember("Developer")]
+    Developer,
 }
